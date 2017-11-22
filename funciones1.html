@@ -4,7 +4,9 @@
 	<title>ejercicio3 </title>	
 <script>
 	function potencia() {
-	var x = Math.pow (5, 3);
+	var y = document.getElementById("numero1").value;
+	var c = document.getElementById("numero2").value;
+	var x = Math.pow (y, c);
 	document.getElementById("demo").innerHTML = x
 	}
 </script>
@@ -13,6 +15,8 @@
 
 <body>
 <p id="demo"></p>
-<script> potencia()	</script>
+<input id="numero1">
+<input id="numero2">
+<button type="button" onclick="potencia()">Resultado</button>
 </body>
 </head>

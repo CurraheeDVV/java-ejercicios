@@ -14,7 +14,7 @@
 <p id="demo"></p>
 
 <script>
-	
+	function Hora(){
 	if(new Date().getHours < 12) {
 		document.getElementById("demo").innerHTML = "Buenos Dias"
 		} else {
@@ -22,8 +22,12 @@
 		document.getElementById("demo").innerHTML = "Buenas Tardes"
 		}
 		}
+		}
 
 </script>
+<input type="text">
+<button type="button" onclick = "Hora()">Buenos....</button>
+
 
 </body>
 </head>
