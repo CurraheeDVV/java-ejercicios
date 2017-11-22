@@ -15,17 +15,19 @@
 
 <script>
 	function Hora(){
-	if(new Date().getHours < 12) {
+	var x = document.getElementById("hora").value;
+	
+	if(x < 12) {
 		document.getElementById("demo").innerHTML = "Buenos Dias"
 		} else {
-		if (new Date() >12) {
+		if (x >12) {
 		document.getElementById("demo").innerHTML = "Buenas Tardes"
 		}
 		}
 		}
 
 </script>
-<input type="text">
+<input type="text" id="hora">
 <button type="button" onclick = "Hora()">Buenos....</button>
 
 
