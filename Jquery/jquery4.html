@@ -11,17 +11,19 @@
 		$(document).ready(function(){
 			var i = 0;
 			$('.uno').click(function(){ //tambien esta keydown y keyup
-			$("a[href]").hide();
+			$("a[target='_blank'").hide();
 		});
-		
+		$(".dos").click(function(){
+		$("#segundo").hide();
+		});
 	});
 	</script>
 </head>
 
 <body>
 
-<a href="http://www.s4aclan.com" >primer link</a><br>
-<a href="http://www.google.com" >segundo link</a><br>
+<a href="http://www.s4aclan.com" target="_blank" id="primero">primer link</a><br>
+<a href="http://www.google.com" id="segundo">segundo link</a><br>
 <button type="button" class="uno">primero</button>
-
+<button type="button" class="dos">segundo</button>
 </html>
